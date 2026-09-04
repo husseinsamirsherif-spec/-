@@ -69,7 +69,24 @@ Distance (cm) = Echo Pulse Time / 58
 ## Safety Condition
 
 Distance < 20 cm → UNSAFE
+Distance >= 20 cm → SAFE
+
 ## Project Demo
 [▶ Watch the Proteus Simulation](media/adas-demo.mp4)
 
-Distance >= 20 cm → SAFE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

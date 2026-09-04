@@ -72,8 +72,7 @@ Distance < 20 cm → UNSAFE
 Distance >= 20 cm → SAFE
 
 ## Project Demo
-[▶ Watch the Proteus Simulation](media/adas-demo.mp4?raw=1)
-
+[▶ Watch the Proteus Simulation](media/adas-demo.mp4)
 
 
 

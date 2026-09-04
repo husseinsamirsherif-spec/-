@@ -65,11 +65,11 @@ Timer1 runs at 1 MHz, so:
 Distance is calculated using:
 
 Distance (cm) = Echo Pulse Time / 58
-## Project Demo
-[▶ Watch the Proteus Simulation](media/adas-demo.mp4)
 
 ## Safety Condition
 
 Distance < 20 cm → UNSAFE
+## Project Demo
+[▶ Watch the Proteus Simulation](media/adas-demo.mp4)
 
 Distance >= 20 cm → SAFE

@@ -1,0 +1,492 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                              ./HAL/Ultrasonic/Ultrasonic.o (__udivmodhi4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./main.o (__do_copy_data)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./MCAL/timer1/Timer1.o
+LOAD ./MCAL/DIO/DIO.o
+LOAD ./HAL/Ultrasonic/Ultrasonic.o
+LOAD ./HAL/Motor/Motor.o
+LOAD ./HAL/LCD/LCD.o
+LOAD ./HAL/Buzzer/Buzzer.o
+LOAD ./HAL/Button/Button.o
+LOAD ./main.o
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0x842
+ *(.vectors)
+ .vectors       0x00000000       0x54 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000076        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000007e        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x0000007e                __vector_1
+                0x0000007e                __vector_12
+                0x0000007e                __bad_interrupt
+                0x0000007e                __vector_6
+                0x0000007e                __vector_3
+                0x0000007e                __vector_11
+                0x0000007e                __vector_13
+                0x0000007e                __vector_17
+                0x0000007e                __vector_19
+                0x0000007e                __vector_7
+                0x0000007e                __vector_5
+                0x0000007e                __vector_4
+                0x0000007e                __vector_9
+                0x0000007e                __vector_2
+                0x0000007e                __vector_15
+                0x0000007e                __vector_8
+                0x0000007e                __vector_14
+                0x0000007e                __vector_10
+                0x0000007e                __vector_16
+                0x0000007e                __vector_18
+                0x0000007e                __vector_20
+ .text          0x00000082        0x0 ./MCAL/timer1/Timer1.o
+ .text          0x00000082        0x0 ./MCAL/DIO/DIO.o
+ .text          0x00000082        0x0 ./HAL/Ultrasonic/Ultrasonic.o
+ .text          0x00000082        0x0 ./HAL/Motor/Motor.o
+ .text          0x00000082        0x0 ./HAL/LCD/LCD.o
+ .text          0x00000082        0x0 ./HAL/Buzzer/Buzzer.o
+ .text          0x00000082        0x0 ./HAL/Button/Button.o
+ .text          0x00000082        0x0 ./main.o
+ .text          0x00000082        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x00000082        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000082        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000082                . = ALIGN (0x2)
+ *(.text.*)
+ .text.Timer1_Init
+                0x00000082       0x1a ./MCAL/timer1/Timer1.o
+                0x00000082                Timer1_Init
+ .text.Timer1_Reset
+                0x0000009c        0x6 ./MCAL/timer1/Timer1.o
+                0x0000009c                Timer1_Reset
+ .text.Timer1_SetCaptureEdge
+                0x000000a2       0x12 ./MCAL/timer1/Timer1.o
+                0x000000a2                Timer1_SetCaptureEdge
+ .text.Timer1_CaptureOccurred
+                0x000000b4        0xa ./MCAL/timer1/Timer1.o
+                0x000000b4                Timer1_CaptureOccurred
+ .text.Timer1_ClearCaptureFlag
+                0x000000be        0x6 ./MCAL/timer1/Timer1.o
+                0x000000be                Timer1_ClearCaptureFlag
+ .text.Timer1_GetCaptureValue
+                0x000000c4        0x8 ./MCAL/timer1/Timer1.o
+                0x000000c4                Timer1_GetCaptureValue
+ .text.Timer1_OverflowOccurred
+                0x000000cc        0xa ./MCAL/timer1/Timer1.o
+                0x000000cc                Timer1_OverflowOccurred
+ .text.Timer1_ClearOverflowFlag
+                0x000000d6        0x6 ./MCAL/timer1/Timer1.o
+                0x000000d6                Timer1_ClearOverflowFlag
+ .text.DIO_SetPinDirection
+                0x000000dc       0xdc ./MCAL/DIO/DIO.o
+                0x000000dc                DIO_SetPinDirection
+ .text.DIO_SetPinValue
+                0x000001b8       0xdc ./MCAL/DIO/DIO.o
+                0x000001b8                DIO_SetPinValue
+ .text.DIO_GetPinValue
+                0x00000294       0x40 ./MCAL/DIO/DIO.o
+                0x00000294                DIO_GetPinValue
+ .text.DIO_SetPortDirection
+                0x000002d4       0x22 ./MCAL/DIO/DIO.o
+                0x000002d4                DIO_SetPortDirection
+ .text.DIO_SetPortValue
+                0x000002f6       0x22 ./MCAL/DIO/DIO.o
+                0x000002f6                DIO_SetPortValue
+ .text.DIO_GetPortValue
+                0x00000318       0x24 ./MCAL/DIO/DIO.o
+                0x00000318                DIO_GetPortValue
+ .text.Ultrasonic_GetDistance
+                0x0000033c       0x9c ./HAL/Ultrasonic/Ultrasonic.o
+                0x0000033c                Ultrasonic_GetDistance
+ .text.Ultrasonic_Init
+                0x000003d8       0x24 ./HAL/Ultrasonic/Ultrasonic.o
+                0x000003d8                Ultrasonic_Init
+ .text.Motor_Stop
+                0x000003fc       0x2a ./HAL/Motor/Motor.o
+                0x000003fc                Motor_Stop
+ .text.Motor_Right
+                0x00000426       0x2a ./HAL/Motor/Motor.o
+                0x00000426                Motor_Right
+ .text.Motor_Left
+                0x00000450       0x2a ./HAL/Motor/Motor.o
+                0x00000450                Motor_Left
+ .text.Motor_Backward
+                0x0000047a       0x2a ./HAL/Motor/Motor.o
+                0x0000047a                Motor_Backward
+ .text.Motor_Forward
+                0x000004a4       0x2a ./HAL/Motor/Motor.o
+                0x000004a4                Motor_Forward
+ .text.Motor_Init
+                0x000004ce       0x2e ./HAL/Motor/Motor.o
+                0x000004ce                Motor_Init
+ .text.LCD_SendNibble
+                0x000004fc       0x62 ./HAL/LCD/LCD.o
+ .text.LCD_WriteChar
+                0x0000055e       0x24 ./HAL/LCD/LCD.o
+                0x0000055e                LCD_WriteChar
+ .text.LCD_WriteString
+                0x00000582       0x1a ./HAL/LCD/LCD.o
+                0x00000582                LCD_WriteString
+ .text.LCD_SendCommand
+                0x0000059c       0x24 ./HAL/LCD/LCD.o
+                0x0000059c                LCD_SendCommand
+ .text.LCD_SetCursor
+                0x000005c0       0x14 ./HAL/LCD/LCD.o
+                0x000005c0                LCD_SetCursor
+ .text.LCD_Clear
+                0x000005d4       0x10 ./HAL/LCD/LCD.o
+                0x000005d4                LCD_Clear
+ .text.LCD_Init
+                0x000005e4       0xa2 ./HAL/LCD/LCD.o
+                0x000005e4                LCD_Init
+ .text.Buzzer_Off
+                0x00000686        0xc ./HAL/Buzzer/Buzzer.o
+                0x00000686                Buzzer_Off
+ .text.Buzzer_On
+                0x00000692        0xc ./HAL/Buzzer/Buzzer.o
+                0x00000692                Buzzer_On
+ .text.Buzzer_Init
+                0x0000069e       0x16 ./HAL/Buzzer/Buzzer.o
+                0x0000069e                Buzzer_Init
+ .text.Button_IsPressed
+                0x000006b4       0x14 ./HAL/Button/Button.o
+                0x000006b4                Button_IsPressed
+ .text.Button_Init
+                0x000006c8       0x52 ./HAL/Button/Button.o
+                0x000006c8                Button_Init
+ .text.main     0x0000071a       0xfc ./main.o
+                0x0000071a                main
+ .text.libgcc   0x00000816       0x28 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x00000816                __udivmodhi4
+ .text.libgcc   0x0000083e        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x0000083e        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x0000083e                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000083e        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x0000083e                exit
+                0x0000083e                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000083e        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000842                _etext = .
+
+.data           0x00800060       0x88 load address 0x00000842
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./MCAL/timer1/Timer1.o
+ .data          0x00800060        0x0 ./MCAL/DIO/DIO.o
+ .data          0x00800060        0x0 ./HAL/Ultrasonic/Ultrasonic.o
+ .data          0x00800060        0x0 ./HAL/Motor/Motor.o
+ .data          0x00800060        0x0 ./HAL/LCD/LCD.o
+ .data          0x00800060        0x0 ./HAL/Buzzer/Buzzer.o
+ .data          0x00800060        0x0 ./HAL/Button/Button.o
+ .data          0x00800060       0x88 ./main.o
+ .data          0x008000e8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x008000e8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x008000e8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x008000e8                . = ALIGN (0x2)
+                0x008000e8                _edata = .
+                0x008000e8                PROVIDE (__data_end, .)
+
+.bss            0x008000e8        0x0
+                0x008000e8                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x008000e8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x008000e8        0x0 ./MCAL/timer1/Timer1.o
+ .bss           0x008000e8        0x0 ./MCAL/DIO/DIO.o
+ .bss           0x008000e8        0x0 ./HAL/Ultrasonic/Ultrasonic.o
+ .bss           0x008000e8        0x0 ./HAL/Motor/Motor.o
+ .bss           0x008000e8        0x0 ./HAL/LCD/LCD.o
+ .bss           0x008000e8        0x0 ./HAL/Buzzer/Buzzer.o
+ .bss           0x008000e8        0x0 ./HAL/Button/Button.o
+ .bss           0x008000e8        0x0 ./main.o
+ .bss           0x008000e8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x008000e8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x008000e8        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ *(.bss*)
+ *(COMMON)
+                0x008000e8                PROVIDE (__bss_end, .)
+                0x00000842                __data_load_start = LOADADDR (.data)
+                0x000008ca                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008000e8        0x0
+                0x008000e8                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008000e8                PROVIDE (__noinit_end, .)
+                0x008000e8                _end = .
+                0x008000e8                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x1f14
+ *(.stab)
+ .stab          0x00000000      0x51c ./MCAL/timer1/Timer1.o
+ .stab          0x0000051c      0x540 ./MCAL/DIO/DIO.o
+                                0x6fc (size before relaxing)
+ .stab          0x00000a5c      0x378 ./HAL/Ultrasonic/Ultrasonic.o
+                                0x504 (size before relaxing)
+ .stab          0x00000dd4      0x36c ./HAL/Motor/Motor.o
+                                0x378 (size before relaxing)
+ .stab          0x00001140      0x5c4 ./HAL/LCD/LCD.o
+                                0x75c (size before relaxing)
+ .stab          0x00001704      0x204 ./HAL/Buzzer/Buzzer.o
+                                0x210 (size before relaxing)
+ .stab          0x00001908      0x228 ./HAL/Button/Button.o
+                                0x234 (size before relaxing)
+ .stab          0x00001b30      0x3e4 ./main.o
+                                0x5e8 (size before relaxing)
+
+.stabstr        0x00000000      0xf1d
+ *(.stabstr)
+ .stabstr       0x00000000      0xf1d ./MCAL/timer1/Timer1.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(ADAS_.elf elf32-avr)
+LOAD linker stubs
